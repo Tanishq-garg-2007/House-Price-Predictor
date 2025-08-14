@@ -5,7 +5,7 @@ import numpy as np
 
 app = Flask(__name__)
 data = pd.read_csv('Datasets/Cleaned_data.csv')
-pipe = pickle.load(open('models/RidgeModel.pkl', 'rb'))
+pipe = pickle.load(open('Models/RidgeModel.pkl', 'rb'))
 
 @app.route('/')
 def index():
